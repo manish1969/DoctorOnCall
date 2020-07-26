@@ -14,6 +14,9 @@
         <action
             android:id="@+id/action_FirstFragment_to_SecondFragment"
             app:destination="@id/SecondFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_PaymentFragment"
+            app:destination="@id/PaymentFragment" />
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
@@ -23,6 +26,16 @@
 
         <action
             android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/PaymentFragment"
+        android:name="com.example.myapplication.PaymentFragment"
+        android:label="@string/payment_fragment_label"
+        tools:layout="@layout/fragment_payment">
+
+        <action
+            android:id="@+id/action_PaymentFragment_to_FirstFragment"
             app:destination="@id/FirstFragment" />
     </fragment>
 </navigation>
